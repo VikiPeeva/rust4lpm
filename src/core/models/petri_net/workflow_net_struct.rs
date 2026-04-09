@@ -1,4 +1,4 @@
-use crate::core::petri_net::TransitionBorderedPetriNet;
+use crate::core::models::petri_net::TransitionBorderedPetriNet;
 use process_mining::core::process_models::petri_net::ArcType;
 use process_mining::PetriNet;
 use std::ops::Deref;
