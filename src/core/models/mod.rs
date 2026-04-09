@@ -19,7 +19,7 @@ pub trait DotRenderable {
         let mut svg = SVGWriter::new();
         vg.do_it(false, false, false, &mut svg);
 
-        let tmp = std::env::temp_dir().join("dfg.svg");
+        let tmp = std::env::temp_dir().join(format!("{}.svg", uuid::Uuid::new_v4()));
         layout::core::utils::save_to_file(tmp.to_str().
             unwrap(), &svg.finalize())
             .expect("failed to write SVG");
