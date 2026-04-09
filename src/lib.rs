@@ -1,4 +1,4 @@
 pub mod core;
-mod discovery;
+pub mod discovery;
 mod comparison;
 mod alignment;
